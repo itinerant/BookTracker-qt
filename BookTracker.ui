@@ -1,0 +1,839 @@
+<ui version="4.0" >
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1355</width>
+    <height>660</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>BookTracker</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset>
+    <normaloff>../images/books.png</normaloff>../images/books.png</iconset>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac" >
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>22</y>
+     <width>1355</width>
+     <height>616</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_16" >
+    <item>
+     <widget class="QGroupBox" name="groupBox" >
+      <property name="title" >
+       <string>Add Book</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_3" >
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_5" >
+         <item>
+          <widget class="QLabel" name="label_5" >
+           <property name="text" >
+            <string>Reader</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="addReader" >
+           <property name="sizePolicy" >
+            <sizepolicy vsizetype="Fixed" hsizetype="Fixed" >
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize" >
+            <size>
+             <width>100</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <item>
+            <property name="text" >
+             <string/>
+            </property>
+           </item>
+           <item>
+            <property name="text" >
+             <string>Jon</string>
+            </property>
+           </item>
+           <item>
+            <property name="text" >
+             <string>Tibby</string>
+            </property>
+           </item>
+           <item>
+            <property name="text" >
+             <string>Emily</string>
+            </property>
+           </item>
+           <item>
+            <property name="text" >
+             <string>Rhys</string>
+            </property>
+           </item>
+           <item>
+            <property name="text" >
+             <string>Rebecca</string>
+            </property>
+           </item>
+           <item>
+            <property name="text" >
+             <string>Hannah</string>
+            </property>
+           </item>
+           <item>
+            <property name="text" >
+             <string>Jane</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout" >
+         <item>
+          <widget class="QLabel" name="label" >
+           <property name="text" >
+            <string>Title</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="addTitle" >
+           <property name="sizePolicy" >
+            <sizepolicy vsizetype="Fixed" hsizetype="MinimumExpanding" >
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize" >
+            <size>
+             <width>220</width>
+             <height>0</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2" >
+         <item>
+          <widget class="QLabel" name="label_2" >
+           <property name="text" >
+            <string>Author</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="addAuthor" >
+           <property name="sizePolicy" >
+            <sizepolicy vsizetype="Fixed" hsizetype="MinimumExpanding" >
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize" >
+            <size>
+             <width>200</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="editable" >
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_3" >
+         <item>
+          <widget class="QLabel" name="label_3" >
+           <property name="text" >
+            <string>Genre</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="addGenre" >
+           <property name="maximumSize" >
+            <size>
+             <width>120</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="editable" >
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_4" >
+         <item>
+          <widget class="QLabel" name="label_4" >
+           <property name="text" >
+            <string>Category</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="addCategory" >
+           <property name="maximumSize" >
+            <size>
+             <width>120</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="editable" >
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_13" >
+         <item>
+          <widget class="QLabel" name="label_12" >
+           <property name="text" >
+            <string>Date</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="addDate" >
+           <property name="focusPolicy" >
+            <enum>Qt::NoFocus</enum>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_6" >
+         <item>
+          <widget class="QLabel" name="label_6" >
+           <property name="text" >
+            <string>Pages</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="addPages" >
+           <property name="sizePolicy" >
+            <sizepolicy vsizetype="Fixed" hsizetype="Fixed" >
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize" >
+            <size>
+             <width>50</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize" >
+            <size>
+             <width>50</width>
+             <height>16777215</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_7" >
+         <item>
+          <widget class="QLabel" name="label_7" >
+           <property name="text" >
+            <string>Audiobook</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="addAudiobook" >
+           <property name="text" >
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QPushButton" name="addBook" >
+         <property name="text" >
+          <string>Add Book</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBox_2" >
+      <property name="title" >
+       <string>Filter Books</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_4" >
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_15" >
+         <item>
+          <widget class="QLabel" name="label_15" >
+           <property name="text" >
+            <string>Reader</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="filterReader" >
+           <property name="sizePolicy" >
+            <sizepolicy vsizetype="Fixed" hsizetype="Fixed" >
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize" >
+            <size>
+             <width>100</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <item>
+            <property name="text" >
+             <string/>
+            </property>
+           </item>
+           <item>
+            <property name="text" >
+             <string>Jon</string>
+            </property>
+           </item>
+           <item>
+            <property name="text" >
+             <string>Tibby</string>
+            </property>
+           </item>
+           <item>
+            <property name="text" >
+             <string>Emily</string>
+            </property>
+           </item>
+           <item>
+            <property name="text" >
+             <string>Rhys</string>
+            </property>
+           </item>
+           <item>
+            <property name="text" >
+             <string>Rebecca</string>
+            </property>
+           </item>
+           <item>
+            <property name="text" >
+             <string>Hannah</string>
+            </property>
+           </item>
+           <item>
+            <property name="text" >
+             <string>Jane</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_8" >
+         <item>
+          <widget class="QLabel" name="label_8" >
+           <property name="text" >
+            <string>Title</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="filterTitle" />
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_9" >
+         <item>
+          <widget class="QLabel" name="label_9" >
+           <property name="text" >
+            <string>Author</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="filterAuthor" >
+           <property name="focusPolicy" >
+            <enum>Qt::StrongFocus</enum>
+           </property>
+           <property name="readOnly" >
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_10" >
+         <item>
+          <widget class="QLabel" name="label_10" >
+           <property name="text" >
+            <string>Genre</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="filterGenre" >
+           <property name="editable" >
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_11" >
+         <item>
+          <widget class="QLabel" name="label_11" >
+           <property name="text" >
+            <string>Category</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="filterCategory" >
+           <property name="editable" >
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_12" >
+         <item>
+          <widget class="QLabel" name="label_13" >
+           <property name="text" >
+            <string>Date</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout" >
+           <item>
+            <widget class="QComboBox" name="filterMonth" >
+             <property name="sizePolicy" >
+              <sizepolicy vsizetype="Fixed" hsizetype="Fixed" >
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="maximumSize" >
+              <size>
+               <width>65</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="focusPolicy" >
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <item>
+              <property name="text" >
+               <string/>
+              </property>
+             </item>
+             <item>
+              <property name="text" >
+               <string>Jan</string>
+              </property>
+             </item>
+             <item>
+              <property name="text" >
+               <string>Feb</string>
+              </property>
+             </item>
+             <item>
+              <property name="text" >
+               <string>Mar</string>
+              </property>
+             </item>
+             <item>
+              <property name="text" >
+               <string>Apr</string>
+              </property>
+             </item>
+             <item>
+              <property name="text" >
+               <string>May</string>
+              </property>
+             </item>
+             <item>
+              <property name="text" >
+               <string>Jun</string>
+              </property>
+             </item>
+             <item>
+              <property name="text" >
+               <string>Jul</string>
+              </property>
+             </item>
+             <item>
+              <property name="text" >
+               <string>Aug</string>
+              </property>
+             </item>
+             <item>
+              <property name="text" >
+               <string>Sep</string>
+              </property>
+             </item>
+             <item>
+              <property name="text" >
+               <string>Oct</string>
+              </property>
+             </item>
+             <item>
+              <property name="text" >
+               <string>Nov</string>
+              </property>
+             </item>
+             <item>
+              <property name="text" >
+               <string>Dec</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="filterYear" >
+             <property name="sizePolicy" >
+              <sizepolicy vsizetype="Fixed" hsizetype="Fixed" >
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="maximumSize" >
+              <size>
+               <width>80</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="focusPolicy" >
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <item>
+              <property name="text" >
+               <string/>
+              </property>
+             </item>
+             <item>
+              <property name="text" >
+               <string>2003</string>
+              </property>
+             </item>
+             <item>
+              <property name="text" >
+               <string>2004</string>
+              </property>
+             </item>
+             <item>
+              <property name="text" >
+               <string>2005</string>
+              </property>
+             </item>
+             <item>
+              <property name="text" >
+               <string>2006</string>
+              </property>
+             </item>
+             <item>
+              <property name="text" >
+               <string>2007</string>
+              </property>
+             </item>
+             <item>
+              <property name="text" >
+               <string>2008</string>
+              </property>
+             </item>
+             <item>
+              <property name="text" >
+               <string>2009</string>
+              </property>
+             </item>
+             <item>
+              <property name="text" >
+               <string>2010</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_14" >
+         <item>
+          <widget class="QLabel" name="label_14" >
+           <property name="text" >
+            <string>Audiobook</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2" >
+           <item>
+            <widget class="QRadioButton" name="filterAudiobookYes" >
+             <property name="focusPolicy" >
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="text" >
+              <string>Yes</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="filterAudiobookNo" >
+             <property name="focusPolicy" >
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="text" >
+              <string>No</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="filterAudiobookEither" >
+             <property name="focusPolicy" >
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="text" >
+              <string>Either</string>
+             </property>
+             <property name="checked" >
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer" >
+         <property name="orientation" >
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0" >
+          <size>
+           <width>228</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTableWidget" name="bookTable" >
+      <property name="editTriggers" >
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <property name="alternatingRowColors" >
+       <bool>true</bool>
+      </property>
+      <property name="selectionMode" >
+       <enum>QAbstractItemView::NoSelection</enum>
+      </property>
+      <property name="selectionBehavior" >
+       <enum>QAbstractItemView::SelectItems</enum>
+      </property>
+      <property name="sortingEnabled" >
+       <bool>true</bool>
+      </property>
+      <property name="columnCount" >
+       <number>8</number>
+      </property>
+      <column>
+       <property name="text" >
+        <string>Reader</string>
+       </property>
+      </column>
+      <column>
+       <property name="text" >
+        <string>Title</string>
+       </property>
+      </column>
+      <column>
+       <property name="text" >
+        <string>Author</string>
+       </property>
+      </column>
+      <column>
+       <property name="text" >
+        <string>Genre</string>
+       </property>
+      </column>
+      <column>
+       <property name="text" >
+        <string>Categories</string>
+       </property>
+      </column>
+      <column>
+       <property name="text" >
+        <string>Date</string>
+       </property>
+      </column>
+      <column>
+       <property name="text" >
+        <string>Pages</string>
+       </property>
+      </column>
+      <column>
+       <property name="text" >
+        <string>Audiobook</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1355</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile" >
+    <property name="title" >
+     <string>File</string>
+    </property>
+    <addaction name="actionAbout_Qt" />
+    <addaction name="actionAbout_BookTracker" />
+    <addaction name="actionQuit" />
+   </widget>
+   <addaction name="menuFile" />
+  </widget>
+  <widget class="QStatusBar" name="statusbar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>638</y>
+     <width>1355</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <action name="actionQuit" >
+   <property name="text" >
+    <string>Quit</string>
+   </property>
+   <property name="menuRole" >
+    <enum>QAction::QuitRole</enum>
+   </property>
+  </action>
+  <action name="actionAbout_Qt" >
+   <property name="text" >
+    <string>About Qt</string>
+   </property>
+   <property name="menuRole" >
+    <enum>QAction::AboutQtRole</enum>
+   </property>
+  </action>
+  <action name="actionAbout_BookTracker" >
+   <property name="text" >
+    <string>About BookTracker</string>
+   </property>
+   <property name="menuRole" >
+    <enum>QAction::AboutRole</enum>
+   </property>
+  </action>
+  <action name="actionJon" >
+   <property name="checkable" >
+    <bool>true</bool>
+   </property>
+   <property name="checked" >
+    <bool>true</bool>
+   </property>
+   <property name="text" >
+    <string>Jon</string>
+   </property>
+  </action>
+  <action name="actionTibby" >
+   <property name="checkable" >
+    <bool>true</bool>
+   </property>
+   <property name="text" >
+    <string>Tibby</string>
+   </property>
+  </action>
+  <action name="actionEmily" >
+   <property name="checkable" >
+    <bool>true</bool>
+   </property>
+   <property name="text" >
+    <string>Emily</string>
+   </property>
+  </action>
+  <action name="actionRhys" >
+   <property name="checkable" >
+    <bool>true</bool>
+   </property>
+   <property name="text" >
+    <string>Rhys</string>
+   </property>
+  </action>
+  <action name="actionRebecca" >
+   <property name="checkable" >
+    <bool>true</bool>
+   </property>
+   <property name="text" >
+    <string>Rebecca</string>
+   </property>
+  </action>
+  <action name="actionHannah" >
+   <property name="checkable" >
+    <bool>true</bool>
+   </property>
+   <property name="text" >
+    <string>Hannah</string>
+   </property>
+  </action>
+  <action name="actionJane" >
+   <property name="checkable" >
+    <bool>true</bool>
+   </property>
+   <property name="text" >
+    <string>Jane</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

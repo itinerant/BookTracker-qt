@@ -1,0 +1,5 @@
+vertical centering of pages
+
+audiobook filter does not work for other readers
+
+check totals in status bar
